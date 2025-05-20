@@ -8,53 +8,139 @@
 </head>
 <body>
   <header>
-    <h1>Fadi Batshon</h1>
-    <p>Business • Finance • Data Analytics • Supply Chain • Innovation • Technology </p>
+    <div class="container">
+      <nav>
+        <div class="logo">Fadi <span>Batshon</span></div>
+        <ul class="nav-links">
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#research">Research</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <button class="mobile-menu-btn">☰</button>
+      </nav>
+    </div>
   </header>
 
-  <nav>
-    <a href="#projects">Projects</a>
-    <a href="#research">Research</a>
-    <a href="#contact">Contact</a>
-  </nav>
+  <section class="hero fade-in">
+    <div class="container">
+      <div class="hero-content">
+        <h1>Hi, I'm <span class="highlight">Fadi Batshon</span></h1>
+        <p>Business • Finance • Data Analytics • Supply Chain • Innovation</p>
+        <div class="tags">
+          <span class="tag">Finance</span>
+          <span class="tag">Analytics</span>
+          <span class="tag">Strategy</span>
+          <span class="tag">Innovation</span>
+        </div>
+        <div class="cta-buttons">
+          <a href="#projects" class="btn btn-primary">View Projects</a>
+          <a href="#contact" class="btn btn-outline">Contact Me</a>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <section id="projects">
-    <h2>Projects</h2>
-    <div class="card">
-      <h3>Financial Dashboard</h3>
-      <p>Built a real-time stock and options dashboard using Python, Sheets, and the Black-Scholes model.</p>
-      <button class="btn">View Project</button>
-    </div>
-    <div class="card">
-      <h3>Logistics AI Optimizer</h3>
-      <p>Machine learning model that streamlines supply chain routing and warehouse allocation.</p>
-      <button class="btn">Explore Code</button>
+    <div class="container">
+      <h2 class="section-title">Projects</h2>
+      <div class="projects-grid">
+        <div class="project-card fade-in delay-1">
+          <div class="project-img"></div>
+          <div class="project-content">
+            <h3>Financial Dashboard</h3>
+            <p>Real-time stock and options dashboard using Python and Black-Scholes.</p>
+            <div class="project-tech">
+              <span>Python</span><span>Sheets</span><span>Finance</span>
+            </div>
+            <div class="project-links">
+              <a href="#">GitHub</a>
+              <a href="#">Live Demo</a>
+            </div>
+          </div>
+        </div>
+        <div class="project-card fade-in delay-2">
+          <div class="project-img"></div>
+          <div class="project-content">
+            <h3>Logistics AI Optimizer</h3>
+            <p>ML model that streamlines supply chain routing and warehouse allocation.</p>
+            <div class="project-tech">
+              <span>AI</span><span>Logistics</span><span>ML</span>
+            </div>
+            <div class="project-links">
+              <a href="#">GitHub</a>
+              <a href="#">Live Demo</a>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
   <section id="research">
-    <h2>Research Papers</h2>
-    <div class="card">
-      <h3>Emerging Markets Risk</h3>
-      <p>Analyzed political risk in global markets and its effect on currency volatility and sovereign debt.</p>
-      <button class="btn">Read PDF</button>
-    </div>
-    <div class="card">
-      <h3>AI in Financial Regulation</h3>
-      <p>Examined algorithmic trading models and proposed policy suggestions for better oversight.</p>
-      <button class="btn">Read Summary</button>
+    <div class="container">
+      <h2 class="section-title">Research Papers</h2>
+      <div class="projects-grid">
+        <div class="project-card fade-in delay-1">
+          <div class="project-content">
+            <h3>Emerging Markets Risk</h3>
+            <p>Political risk analysis and its effect on currency volatility and debt.</p>
+            <div class="project-links">
+              <a href="#">Read PDF</a>
+            </div>
+          </div>
+        </div>
+        <div class="project-card fade-in delay-2">
+          <div class="project-content">
+            <h3>AI in Financial Regulation</h3>
+            <p>Algorithmic trading and policy suggestions for oversight.</p>
+            <div class="project-links">
+              <a href="#">Read Summary</a>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
   <section id="contact">
-    <h2>Contact Me</h2>
-    <p>Email: <a href="mailto:your.email@example.com" style="color: var(--accent-color)">your.email@example.com</a></p>
-    <p>LinkedIn: <a href="https://linkedin.com/in/yourname" style="color: var(--accent-color)">linkedin.com/in/yourname</a></p>
-    <button class="btn">Send Message</button>
+    <div class="container contact-container">
+      <div class="contact-info">
+        <h3>Get in Touch</h3>
+        <div class="contact-links">
+          <div class="contact-link">📧 your.email@example.com</div>
+          <div class="contact-link">🔗 linkedin.com/in/yourname</div>
+        </div>
+      </div>
+      <div class="contact-form">
+        <form>
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" class="form-control" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" class="form-control" required>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" class="form-control" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Send</button>
+        </form>
+      </div>
+    </div>
   </section>
 
   <footer>
-    &copy; 2025 Fadi Batshon. All rights reserved.
+    <div class="container footer-container">
+      <div class="footer-logo">Fadi <span>Batshon</span></div>
+      <div class="social-links">
+        <a href="#" class="social-link">Twitter</a>
+        <a href="#" class="social-link">GitHub</a>
+        <a href="#" class="social-link">LinkedIn</a>
+      </div>
+    </div>
+    <div class="copyright">&copy; 2025 Fadi Batshon. All rights reserved.</div>
   </footer>
 </body>
 </html>
